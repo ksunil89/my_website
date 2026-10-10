@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff9e8">
+<meta name="description" content="Sunil Kumar — Product Manager building trusted enterprise data platforms, customer data products, and AI-ready experiences.">
+<title>Sunil Kumar — Product, Data & AI | Playful Edition</title>
+<style>
+
+:root{--bg:#fff9e8;--ink:#2b2118;--muted:#6d5b4b;--blue:#1769aa;--line:rgba(43,33,24,.13);--card:#fff;--dark:#2c2118;--radius:28px;--max:1120px;--yellow:#ffcf28;--red:#e6332a;--orange:#f28c28;--brown:#a0704d}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;background:var(--bg);color:var(--ink);font-family:ui-rounded,"Arial Rounded MT Bold",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5;font-size:16px}a{color:var(--blue);text-decoration:none;transition:color .25s ease}a:hover{color:var(--red)}
+main{overflow:hidden}.wrap{max-width:var(--max);margin:auto;padding:0 24px}.hero{padding:80px 0 66px;text-align:center;position:relative}.eyebrow{display:inline-block;font-size:12px;font-weight:950;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+.hero h1{font-size:clamp(36px,8vw,64px);line-height:1.1;margin:0 0 18px;letter-spacing:-.03em}.gradient-text{background:linear-gradient(90deg,#1769aa,#e6332a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.hero>p{font-size:18px;max-width:680px;margin:0 auto 38px;color:var(--muted)}
+.hero-actions{display:flex;gap:16px;justify-content:center;margin-bottom:54px;flex-wrap:wrap}.btn{display:inline-block;padding:12px 28px;border-radius:20px;font-weight:700;font-size:14px;transition:all .3s ease;border:2px solid;cursor:pointer;text-decoration:none}
+.btn-primary{background:var(--blue);color:#fff;border-color:var(--blue);box-shadow:0 4px 0 rgba(23,105,170,.3)}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 0 rgba(23,105,170,.5)}.btn-plain{background:transparent;border-color:var(--ink);color:var(--ink)}.btn-plain:hover{background:var(--yellow);border-color:var(--ink)}
+.hero-art{margin:60px 0 0;position:relative;height:240px;display:flex;align-items:center;justify-content:center}.orbit{position:absolute;border:2px solid var(--line);border-radius:50%;animation:spin 20s linear infinite}.orbit{width:120px;height:120px}.orbit.two{width:180px;height:180px;animation-duration:30s;animation-direction:reverse}.orbit.three{width:240px;height:240px;animation-duration:40s}
+.core{position:relative;z-index:2;width:80px;height:80px;background:var(--yellow);border:3px solid var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:900;box-shadow:0 6px 0 rgba(43,33,24,.15)}
+.art-label{position:absolute;bottom:-36px;left:50%;transform:translateX(-50%);font-size:13px;color:var(--muted);font-weight:600;white-space:nowrap}@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.nav{background:#fff;border-bottom:2px solid var(--line);position:sticky;top:0;z-index:100}.nav-inner{max-width:var(--max);margin:auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:900;font-size:18px;color:var(--ink)}.nav-links{display:flex;gap:32px;align-items:center;flex-direction:row}.nav-links a{font-size:14px;font-weight:600;color:var(--ink);position:relative}.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--red);transition:width .3s}.nav-links a:hover::after{width:100%}
+.menu{display:none;background:none;border:none;font-size:24px;cursor:pointer;padding:8px;color:var(--ink)}.dark-panel{background:var(--dark);color:#fff;border-radius:var(--radius);padding:clamp(40px,8vw,80px);border:3px solid var(--ink);box-shadow:0 8px 0 rgba(0,0,0,.1)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.stat{text-align:left}.stat strong{display:block;font-size:clamp(28px,6vw,42px);line-height:1;margin-bottom:6px;color:var(--yellow)}.stat span{font-size:14px;display:block;color:rgba(255,255,255,.75)}
+.section{padding:72px 0}.section-head{margin-bottom:28px}.kicker{font-size:12px;color:var(--red);text-transform:uppercase;letter-spacing:.12em;font-weight:950;margin-bottom:12px}.section h2{font-size:clamp(32px,6vw,48px);line-height:1.2;margin:0 0 18px;letter-spacing:-.02em}
+.section-intro{font-size:18px;color:var(--muted);max-width:680px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:var(--card);border:2px solid var(--ink);border-radius:24px;padding:27px;min-height:230px;box-shadow:0 6px 0 var(--ink);transition:all .3s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 10px 0 var(--ink)}.iconbox{font-size:32px;margin-bottom:14px;opacity:.7}.card h3{margin:0 0 10px;font-size:18px}.card p{margin:0;font-size:15px;color:var(--muted);line-height:1.6}
+.experience{display:grid;grid-template-columns:230px 1fr;gap:42px}.timeline-label{position:sticky;top:90px;align-self:start}.timeline-label h3{font-size:22px;letter-spacing:-.04em;margin:0 0 9px}.timeline-label p{font-size:14px;color:var(--muted);margin:0;line-height:1.5}.timeline{display:grid;gap:28px}
+.job{padding:24px;background:var(--card);border:2px solid var(--line);border-radius:18px;transition:all .3s}.job:hover{border-color:var(--ink);box-shadow:0 4px 0 var(--line)}.job-top{display:flex;justify-content:space-between;align-items:start;gap:16px;margin-bottom:14px}.job h3{margin:0;font-size:17px}
+.job .company{font-size:14px;color:var(--blue);font-weight:600;margin:4px 0 0}.date{font-size:13px;color:var(--muted);white-space:nowrap}.job ul{margin:0;padding-left:20px;font-size:14px;color:var(--muted);line-height:1.7}.job li{margin-bottom:10px}
+.feature{background:linear-gradient(135deg,#ffe68a,#fffdf6 60%,#ffc6b9);border:3px solid var(--ink);border-radius:var(--radius);padding:clamp(30px,5vw,60px);display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:center;box-shadow:0 8px 0 rgba(43,33,24,.1)}
+.feature h2{margin-top:0}.tag-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.tag{display:inline-block;background:rgba(43,33,24,.08);border:1px solid var(--line);border-radius:20px;padding:8px 16px;font-size:13px;font-weight:600;color:var(--dark)}
+.feature-visual{display:flex;align-items:center;justify-content:center;height:300px;position:relative}.data-orb{width:200px;height:200px;background:radial-gradient(circle at 30% 30%,#fff,#ffb3a7);border:3px solid var(--ink);border-radius:50%;box-shadow:inset -8px -8px 16px rgba(0,0,0,.1),0 8px 0 rgba(43,33,24,.2);animation:float 4s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}.education-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.edu{background:#fff;border:2px solid var(--ink);border-radius:22px;padding:24px;box-shadow:0 5px 0 var(--ink)}
+.edu .year{color:var(--red);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:6px}.edu h3{margin:4px 0 6px;font-size:16px}.edu p{margin:0;font-size:13px;color:var(--muted)}.contact{background:var(--yellow);border:3px solid var(--ink);border-radius:var(--radius);padding:clamp(34px,6vw,68px);text-align:center;box-shadow:0 8px 0 var(--ink)}
+.contact h2{max-width:730px;margin:0 auto 12px}.contact p{font-size:17px;color:var(--muted);margin:0 0 28px}.contact-links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}.contact-link{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;background:var(--ink);color:#fff;border-radius:18px;font-weight:600;font-size:14px;border:2px solid var(--ink);transition:all .3s}
+.contact-link:hover{background:transparent;color:var(--ink)}.footer{background:var(--dark);color:#fff;padding:28px 24px;text-align:center;margin-top:80px;border-top:3px solid var(--ink)}.footer-inner{max-width:var(--max);margin:auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;align-items:center}
+.footer-inner span{font-size:13px}.footer-inner a{color:#fff;border-bottom:1px solid rgba(255,255,255,.3)}.footer-inner a:hover{border-bottom-color:#fff}.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:760px){.nav-links{display:none;position:absolute;top:64px;left:0;right:0;padding:18px 24px 22px;background:rgba(255,249,232,.98);border-bottom:2px solid var(--line);flex-direction:column}.nav-links.open{display:flex}.menu{display:block}.cards{grid-template-columns:1fr}.experience{grid-template-columns:1fr}.timeline-label{position:static}.feature{grid-template-columns:1fr}.feature-visual{height:240px}.education-grid{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr;gap:32px}.footer-inner{grid-template-columns:1fr;gap:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
+
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#home" aria-label="Sunil Kumar home">Sunil Kumar<span style="color:#e6332a">.</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#focus">What I do</a><a href="#experience">Experience</a><a href="#approach">Approach</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="menu" id="menuButton" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+<main id="home">
+  <section class="hero wrap">
+    <p class="eyebrow">A little strategy. A lot of impact. · Product · Data · AI</p>
+    <h1>Turning complex data<br><span class="gradient-text">into meaningful products.</span></h1>
+    <p>I'm Sunil Kumar, a product manager building trusted enterprise data platforms, customer data products, and AI-ready capabilities for real business outcomes.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#experience">Explore my work <span aria-hidden="true">↗</span></a>
+      <a class="btn btn-plain" href="#contact">Let's connect <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="hero-art" aria-label="Abstract illustration representing connected data and product thinking">
+      <div class="orbit"></div><div class="orbit two"></div><div class="orbit three"></div>
+      <div class="core">SK</div>
+      <div class="art-label">Big ideas. Better data. Real-world impact.</div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="about">
+    <div class="dark-panel reveal">
+      <div class="about-grid">
+        <div>
+          <p class="kicker">A little about me</p>
+          <h2>Strategy grounded in data. Products built around people.</h2>
+          <p>I bring 13+ years of experience across enterprise data, analytics, platform support, and product management in financial-services environments. My work sits at the intersection of product thinking and platform engineering—helping teams understand customer needs and translating them into scalable capabilities.</p>
+          <p>I translate complex platform requirements into clear priorities and scalable capabilities—helping teams access trusted data and use it with confidence.</p>
+        </div>
+        <div class="stat-grid">
+          <div class="stat"><strong>13+</strong><span>Years across data, platforms & product</span></div>
+          <div class="stat"><strong>55–60%</strong><span>Reported improvement in customer-data availability / quality outcomes</span></div>
+          <div class="stat"><strong>500+</strong><span>Global B2B clients served by enterprise data products</span></div>
+          <div class="stat"><strong>30%</strong><span>Reduction in SLA breaches on a data-delivery platform</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="focus">
+    <div class="section-head reveal">
+      <p class="kicker">What I work on</p>
+      <h2>Building the foundations<br>for better decisions.</h2>
+      <p class="section-intro">From customer data foundations to cloud data delivery, I focus on making data more trusted, accessible, governed, and useful.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal"><div class="iconbox">◉</div><h3>Customer data products</h3><p>Shaping unified customer profiles and curated data assets that help teams build a consistent view across marketing, sales, and support.</p></article>
+      <article class="card reveal"><div class="iconbox">⌘</div><h3>Enterprise data platforms</h3><p>Defining roadmaps and delivery priorities for scalable, reliable data products across cloud, bulk-delivery, and real-time channels.</p></article>
+      <article class="card reveal"><div class="iconbox">✳</div><h3>Governance & AI readiness</h3><p>Partnering across engineering, architecture, governance, and data science to enable quality, accessible, and compliant data foundations.</p></article>
+    </div>
+  </section>
+
+  <section class="section wrap" id="experience">
+    <div class="section-head reveal"><p class="kicker">Career journey</p><h2>Experience that connects<br>the details to the bigger picture.</h2><p class="section-intro">A path from financial-data research to enterprise product ownership—always focused on building trusted data capabilities.</p></div>
+    <div class="experience">
+      <aside class="timeline-label"><h3>Professional experience</h3><p>Hyderabad, India<br>Financial services · Enterprise technology</p></aside>
+      <div class="timeline">
+        <article class="job reveal">
+          <div class="job-top"><div><h3>Senior Associate Product Manager</h3><p class="company">Principal Financial Group</p></div><span class="date">Dec 2022 — Present</span></div>
+          <ul>
+            <li>Lead product strategy, roadmap prioritization, and delivery for enterprise customer-data capabilities, including a master customer profile across source systems.</li>
+            <li>Partner with Data Engineering, Architecture, Governance, Data Science, BI, and business teams to define requirements, quality standards, access models, and success metrics.</li>
+            <li>Enable analytics, reporting, personalization, and AI/LLM initiatives through curated and governed customer-data assets.</li>
+            <li>Use KPIs such as completeness, accuracy, freshness, adoption, and reliability to prioritize improvements; the profile reports a 55–60% improvement in customer-data availability / quality outcomes.</li>
+          </ul>
+        </article>
+        <article class="job reveal">
+          <div class="job-top"><div><h3>Product Owner</h3><p class="company">S&P Global Market Intelligence</p></div><span class="date">Feb 2020 — Nov 2022</span></div>
+          <ul>
+            <li>Owned backlog prioritization, release planning, and end-to-end delivery for enterprise bulk-data products serving 500+ global B2B clients.</li>
+            <li>Led a SAFe Agile team delivering financial, transactions, ESG, and supply-chain datasets through on-premises, FTP, and cloud channels, including Snowflake-native feeds.</li>
+            <li>Prioritized platform reliability and client-impacting enhancements for Xpressfeed, reducing SLA breaches by 30% and data-delivery defect / issue-resolution time by up to 70%.</li>
+          </ul>
+        </article>
+        <article class="job reveal">
+          <div class="job-top"><div><h3>Platform Expert & UAT Specialist</h3><p class="company">S&P Global Market Intelligence</p></div><span class="date">Jul 2017 — Jan 2020</span></div>
+          <ul>
+            <li>Performed end-to-end testing across marketplace and Capital IQ platform features, validating quality and end-user requirements.</li>
+            <li>Demonstrated new features to product managers and client-support teams, and supported sales and relationship teams with product demos.</li>
+          </ul>
+        </article>
+        <article class="job reveal">
+          <div class="job-top"><div><h3>Financial Modelling Associate</h3><p class="company">S&P Global Market Intelligence</p></div><span class="date">Sep 2015 — Jun 2017</span></div>
+          <ul><li>Supported platform users, helped onboard clients, and guided clients in configuring screens, charts, alerts, watchlists, reports, and dashboards.</li></ul>
+        </article>
+        <article class="job reveal">
+          <div class="job-top"><div><h3>Research Associate → Junior Research Associate</h3><p class="company">S&P Global Market Intelligence</p></div><span class="date">May 2013 — Aug 2015</span></div>
+          <ul><li>Worked with bonds, CDS, and switches price data, reference-data validation, database quality, client queries, and coordination with international teams.</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="approach">
+    <div class="feature reveal">
+      <div>
+        <p class="kicker">My product philosophy</p>
+        <h2>Make the complex feel clear.</h2>
+        <p>I believe strong data products begin with a real customer or business problem—not a technology in search of a use case. I bring stakeholders together around outcomes, make trade-offs visible, and focus on continuous, measurable improvement.</p>
+        <div class="tag-row"><span class="tag">Product strategy</span><span class="tag">Roadmaps & prioritization</span><span class="tag">Customer empathy</span><span class="tag">Cross-functional leadership</span><span class="tag">Data governance</span><span class="tag">KPI-driven delivery</span></div>
+      </div>
+      <div class="feature-visual" aria-hidden="true"><div class="data-orb"></div></div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="education">
+    <div class="section-head reveal"><p class="kicker">Education & certification</p><h2>Business context.<br>Product craft.</h2></div>
+    <div class="education-grid">
+      <article class="edu reveal"><span class="year">2011 — 2013</span><h3>MBA, Finance & Marketing</h3><p>Aurora's Business School</p></article>
+      <article class="edu reveal"><span class="year">2006 — 2009</span><h3>Bachelor's Degree, Accounting</h3><p>Patna University</p></article>
+      <article class="edu reveal"><span class="year">Certification</span><h3>SAFe® Product Owner / Product Manager</h3><p>Agile product ownership and delivery</p></article>
+      <article class="edu reveal"><span class="year">Core capabilities</span><h3>Data & product leadership</h3><p>Strategic data analysis · KPI reporting · Data integration · Data governance</p></article>
+    </div>
+  </section>
+
+  <section class="section wrap" id="contact">
+    <div class="contact reveal">
+      <p class="kicker">Get in touch</p>
+      <h2>Have a data challenge worth solving?</h2>
+      <p>I'm always interested in thoughtful conversations about product management, enterprise data platforms, customer data, analytics, and AI enablement.</p>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:sunilkr225@gmail.com"><span>✉</span> Email Sunil</a>
+        <a class="contact-link" href="https://www.linkedin.com/in/sunilkr225" target="_blank" rel="noopener noreferrer"><span>↗</span> LinkedIn</a>
+        <a class="contact-link" href="tel:+917386576434"><span>⌕</span> Call</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer"><div class="footer-inner"><span>© <span id="year"></span> Sunil Kumar</span><span>Made with curiosity, a little color, and a lot of product thinking.</span><a href="#home">Back to top</a></div></footer>
+<script>
+const menuButton=document.getElementById('menuButton');
+const navLinks=document.getElementById('navLinks');
+menuButton.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.textContent=open?'×':'☰';});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.textContent='☰';}));
+document.getElementById('year').textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
